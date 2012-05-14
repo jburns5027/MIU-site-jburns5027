@@ -204,13 +204,16 @@
 
 		<div data-role="page" id="running" data-add-back-btn="true">
 	
-		<div data-role="header"data-position="fixed">
+		<div data-role="header"data-position="fixed" data-theme="e" >
 			<h1>Running</h1>
 			</div>
-	
-		<div date-role="Content" >
+			
+			<div date-role="Content" data-theme="e"  >
 			<h1><img src="images/running.jpg" /></h1>
-		<ul data-role="listview"  data-filter="true">
+			
+			<form action="" method="post" id="recoredrunning">
+			
+			<ul data-role="listview"  data-filter="true">
 			<div data-role="collapsible">
 			   <h3>Races</h3>
 			   <h4>5K</h4>
@@ -218,7 +221,55 @@
 			   <h4>Half-Marathon</h4>
 			   <h4>Marathon</h4>
 			   <h4>Ultra-Marathon</h4>
-			   
+			</div>
+			
+			 <label for="basic">Name of Workout:</label>
+    			<input type="text" name="name" id="workoutname" value="" class="required"  />
+    			
+    			
+			<fieldset data-role="controlgroup">
+			<legend>Did you complete the workout:</legend>
+				<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked" />
+				<label for="radio-choice-1">Yes</label>
+		
+				<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  />
+				<label for="radio-choice-2">No</label>
+			</fieldset>
+			
+			<div data-role="fieldcontain">
+			<fieldset data-role="controlgroup">
+			   <legend>Aparel:</legend>
+			   <input type="checkbox" name="checkbox-0" id="checkbox-0" class="custom" />
+			   		<label for="checkbox-0">Dry-fit Shirt</label>
+			   <input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom" />
+	   		   		<label for="checkbox-1">Arm-Band</label>
+	   		   <input type="checkbox" name="checkbox-2" id="checkbox-3" class="custom" />
+			   		<label for="checkbox-3">iPhone</label>
+			   <input type="checkbox" name="checkbox-4" id="checkbox-4" class="custom" />
+			   		<label for="checkbox-4">Compression Shirt</label>
+			   <input type="checkbox" name="checkbox-5" id="checkbox-5" class="custom" />
+	   		   		<label for="checkbox-5">Dry-Fit Shorts</label>
+	   		   <input type="checkbox" name="checkbox-6" id="checkbox-6" class="custom" />
+	   					<label for="checkbox-6">Compression Pants</label>
+	   		   <input type="checkbox" name="checkbox-7" id="checkbox-7" class="custom" />
+	   				<label for="checkbox-7">Running Shoes</label>
+			</fieldset>
+			</div>
+			
+			<div data-role="fieldcontain">
+			   <label for="select-choice-1" class="select">Time of day:</label>
+			   <select name="select-choice-1" id="select-choice-1">
+				  <option value="Morning">Morning</option>
+				  <option value="Afternon">Afternoon</option>
+				  <option value="Evening">Evening</option>
+			   </select>
+			</div>
+			
+			<div data-role"fieldcontain">
+			<label for="intensity">Intensity of the Workout:</label>
+			<input type="range" name="intensity" id="intensity" value="0" min="0" max="100"/>
+			</div>
+			
 			</div>
 			<div class="ui-grid-b">
 				<h3>How did the workout feel?</h3>
@@ -226,10 +277,32 @@
 				<div class="ui-block-b"><img src="images/soso.jpg" /></div>
 				<div class="ui-block-c"><img src="images/sad.jpg" /></div>
 			</div><!-- /grid-b -->
-
+			
+			<div data-role"fieldcontain">
+				<input type="reset" value="Reset" data-theme="a" />
+				<input type="submit" value="Submit Workout" data-theme="e"/>
+			</div>
+			
 			
 		</ul>
 		</div>
+
+			
+			</form>
+	
+		
+		
+			
+			
+			
+			
+		
+		
+						
+			
+			
+		
+		
 	
 		<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
@@ -616,6 +689,7 @@ Read more: http://www.livestrong.com/power-foods-eggs/#ixzz1uVOnu9dn</h4>
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
