@@ -62,7 +62,7 @@
 				<ul>
 					<li><a href="#news" data-icon="star" >News</a></li>
 					<li><a href="#settings" data-icon="gear">Settings</a></li>
-					<li><a href="#index.html" data-icon="forward">Other</a></li> 
+					<li><a href="#recorededErrors" data-icon="forward">Errors</a></li> 
 
 
 				</ul>
@@ -283,10 +283,11 @@
 				<input type="submit" value="Submit Workout" data-theme="e"/>
 			</div>
 			
-			
-		</ul>
+			</ul>
+			<a href="#runningErrors" id="#rErrorslink" data-rel="dialog" data-transition="pop">Open Errors</a> 
+		
 		</div>
-
+				
 			
 			</form>
 	
@@ -685,11 +686,41 @@ Read more: http://www.livestrong.com/power-foods-eggs/#ixzz1uVOnu9dn</h4>
 			</div>
 		</div>
 	</div>
+	<div data-role="dialog" id="runningErrors">
+	
+		<div data-role="header"data-position="fixed" data-theme="e">
+			<h1>Missing Fields</h1>
+		</div>
+	
+		<div date-role="content">
+	 
+		<ul data-role="listview">
+			<li>Test</li>
+			
+		</ul>
+		
+		</div>
+		
+	
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#news" data-icon="star" >News</a></li>
+					<li><a href="#settings" data-icon="gear">Settings</a></li>
+					<li><a href="#home" data-icon="forward">Home</a></li> 
+
+
+				</ul>
+			</div>
+		</div>
+	</div>
 
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-</body>
+	<script type="text/css" src="css/style.css"></script>
+	<link type="text/css" rel="stylesheet"  href="css/style.css" />
+	
 </html>
