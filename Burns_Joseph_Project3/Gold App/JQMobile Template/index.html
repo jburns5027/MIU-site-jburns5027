@@ -20,9 +20,88 @@
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.custom.min.js"></script>
+	
 
 </head>
 <body>
+
+<div data-role="page" id="cta" >
+	
+		<div data-role="header"data-position="fixed" data-add-back-btn="true" data-theme="e">
+			<h1>Workout Log</h1>
+		</div>
+	
+		<div date-role="content">
+		<ul data-role="listview">
+		
+			<li><a href="#home">
+				<h2><img src="images/IMpossible.jpg"/></h2>
+				</ul>
+		</div>
+		
+				<h3>Nothings impossible,</h3>
+				<h3>when you say IMpossible!!</h3>
+		
+		
+	
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#news" data-icon="star" >News</a></li>
+					<li><a href="#settings" data-icon="gear">Settings</a></li>
+					<li><a href="#" data-icon="forward">Other</a></li> 
+
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<div data-role="page" id="home" data-add-back-btn="true">
+	
+		<div data-role="header"data-position="fixed" data-add-back-btn="true data-theme="e">
+			<h1>Workout Log</h1>
+		</div>
+	
+		<div date-role="content">
+		<ul data-role="listview">
+		
+			<li><a href="#cardio">
+				<h3>Cardio</h3> 
+				
+				<p>Workouts such as Running, Biking etc</p>
+			</a></li>
+			
+			
+			
+			<li><a href="#core">
+				<h3>Core</h3>
+				
+				<p>Workouts such as sit-ups, planks etc</p>
+			</a></li>
+			
+			<li><a href="#weight">
+				<h3>Weight</h3>
+				
+				<p>Workouts such as push-ups, curls etc</p>
+			</a></li>
+		</ul>
+		
+		</div>
+		
+	
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#news" data-icon="star" >News</a></li>
+					<li><a href="#settings" data-icon="gear">Settings</a></li>
+					<li><a href="#cta" data-icon="forward">Home</a></li> 
+
+
+				</ul>
+			</div>
+		</div>
+	</div>
 
 	<div data-role="page" id="home">
 	
@@ -215,75 +294,86 @@
 			
 			<form action="" method="post" id="recoredrunningform ">
 			
-			
-			<div data-role="collapsible">
-			   <h3>Races</h3>
-			   <h4>5K</h4>
-			   <h4>10K</h4>
-			   <h4>Half-Marathon</h4>
-			   <h4>Marathon</h4>
-			   <h4>Ultra-Marathon</h4>
+			<div data-role="fieldcontain">
+				<div data-role="collapsible">
+				   <h3>Races</h3>
+				   <h4>5K</h4>
+				   <h4>10K</h4>
+				   <h4>Half-Marathon</h4>
+				   <h4>Marathon</h4>
+				   <h4>Ultra-Marathon</h4>
+				</div>
 			</div>
 			
-			 <label for="basic">Name of Workout:</label>
-    			<input type="text" name="workoutName" id="workoutname" class="required"  />
-    			
-    			
+			<div data-role="fieldcontain">
+				 <label for="basic">Name of Workout:</label>
+					<input type="text" name="workoutName" id="workoutname" class="required"  />
+    		</div>
+    		
+    		<div data-role="fieldcontain">
 			<fieldset data-role="controlgroup">
 			<legend>Did you complete the workout:</legend>
-				<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" class="required" />
-				<label for="radio-choice-1">Yes</label>
+				<input type="radio" value="Yes" name="yes-or-no" id="yes-or-no-1" class="required" />
+				<label for="yes-or-no-1">Yes</label>
 		
-				<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  />
-				<label for="radio-choice-2">No</label>
+				<input type="radio" value="No"  name="yes-or-no" id="yes-or-no-2"  />
+				<label for="yes-or-no-2">No</label>
 			</fieldset>
+			</div>
 			
 			<div data-role="fieldcontain">
 			<fieldset data-role="controlgroup">
 			   <legend>Aparel:</legend>
-			   <input type="checkbox" name="checkbox-0" id="checkbox-0" class="required"  />
-			   		<label for="checkbox-0">Dry-fit Shirt</label>
-			   <input type="checkbox" name="checkbox-1" id="checkbox-1"  />
-	   		   		<label for="checkbox-1">Arm-Band</label>
-	   		   <input type="checkbox" name="checkbox-2" id="checkbox-3"  />
-			   		<label for="checkbox-3">iPhone</label>
-			   <input type="checkbox" name="checkbox-4" id="checkbox-4"  />
-			   		<label for="checkbox-4">Compression Shirt</label>
-			   <input type="checkbox" name="checkbox-5" id="checkbox-5"  />
-	   		   		<label for="checkbox-5">Dry-Fit Shorts</label>
-	   		   <input type="checkbox" name="checkbox-6" id="checkbox-6"  />
-	   					<label for="checkbox-6">Compression Pants</label>
-	   		   <input type="checkbox" name="checkbox-7" id="checkbox-7"   />
-	   				<label for="checkbox-7">Running Shoes</label>
+				   <input type="checkbox" value="Dry-fit Shirt" name="apparel" id="apparel-0" class="required"  />
+						<label for="apparel-0">Dry-fit Shirt</label>
+						
+				   <input type="checkbox" value="Arm-Band" name="apparel" id="apparel-1"  />
+						<label for="apparel-1">Arm-Band</label>
+						
+				   <input type="checkbox" value="iPhone" name="apparel" id="apparel-3"  />
+						<label for="apparel-3">iPhone</label>
+						
+				   <input type="checkbox" value="Compression Shirt" name="apparel" id="apparel-4"  />
+						<label for="apparel-4">Compression Shirt</label>
+						
+				   <input type="checkbox" value="Dry-Fit Shorts" name="apparel" id="apparel-5"  />
+						<label for="apparel-5">Dry-Fit Shorts</label>
+						
+				   <input type="checkbox" value="Compression Pants" name="apparel" id="apparel-6"  />
+							<label for="apparel-6">Compression Pants</label>
+							
+				   <input type="checkbox" value="Running Shoes" name="apparel" id="aparel-7"   />
+						<label for="apparel-7">Running Shoes</label>
 			</fieldset>
 			</div>
 			
 			<div data-role="fieldcontain">
-			   <label for="select-choice-1" class="select">Time of day:</label>
-			   <select name="select-choice-1" id="selectTimeOfDay" class="required">
-				  <option value="Morning">Morning</option>
-				  <option value="Afternon">Afternoon</option>
-				  <option value="Evening">Evening</option>
-			   </select>
+			   <label for="time-of-day" class="select">Time of day:</label>
+				   <select name="time-of-day" id="time-of-day" class="required">
+					  <option value="Morning">Morning</option>
+					  <option value="Afternon">Afternoon</option>
+					  <option value="Evening">Evening</option>
+				   </select>
 			</div>
 			
 			<div data-role"fieldcontain">
-			<label for="intensity">Intensity of the Workout:</label>
-			<input type="range" name="intensity" id="intensity" value="0" min="1" max="100"/>
+				<label for="intensity">Intensity of the Workout:</label>
+				<input type="range" name="intensity" id="intensity" value="0" min="1" max="100"/>
 			</div>
 			
-			</div>
+			<!--</div>-->
+			<div data-role="fieldcontain">
 			<div class="ui-grid-b">
 				<h3>How did the workout feel?</h3>
 				<div class="ui-block-a"><img src="images/smily.jpg" /></div>
 				<div class="ui-block-b"><img src="images/soso.jpg" /></div>
 				<div class="ui-block-c"><img src="images/sad.jpg" /></div>
 			</div><!-- /grid-b -->
+			</div>
 			
 			<div data-role"fieldcontain">
-			<input type="submit" value="Submit Workout" data-theme="e"/>
-			<input type="reset" value="Reset" data-theme="a" />
-				
+				<input type="submit" value="Submit Workout" data-theme="e"/>
+				<input type="reset" value="Reset" data-theme="a" />
 			</div>
 			
 			</ul>
@@ -709,7 +799,9 @@ Read more: http://www.livestrong.com/power-foods-eggs/#ixzz1uVOnu9dn</h4>
 	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/css" src="css/style.css"></script>
+	<script type="text/javascript" src="js/json.js"></script> 
+	
+	
 	
 	
 </html>
